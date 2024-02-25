@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import Slider from './components/Slider'
-/* import Cards from './components/Cards' */ // <---- tu componente Cards
+import Cards from './components/Cards'
 import Footer from './components/Footer'
 
 const dataHero = [
@@ -42,8 +42,8 @@ function App() {
         </div>
       </section>
 
-      <section className=''>
-        {/* Aqui va tu Cards Components */}
+      <section className='cards-section'> 
+        <Cards />
       </section>
 
       <Footer />

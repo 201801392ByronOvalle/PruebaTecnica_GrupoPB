@@ -1,3 +1,6 @@
+import React from 'react'
+import './styles/Cards.css'
+
 const pizzasList = [
     {
         id: 0,
@@ -19,4 +22,19 @@ const pizzasList = [
         title: "pizza 4",
         url: "https://pruebaspaginas.s3.amazonaws.com/recursos-prueba-tecnica/pizza.jpg",
     },
-]
+];
+
+const Cards = () => {
+  return (
+    <div className="cards-container">
+      {pizzasList.map(pizza => (
+        <div key={pizza.id} className="card">
+          <img src={pizza.url} alt={pizza.title} className="card-image" />
+          <h2 className="card-title">{pizza.title}</h2>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default Cards;
