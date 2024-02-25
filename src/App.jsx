@@ -37,7 +37,7 @@ function App() {
       
       <section className='hero-section'>
         <div className='slider-space'>
-          {/* <Slider /> */}
+          <Slider />
         </div>
       </section>
 
