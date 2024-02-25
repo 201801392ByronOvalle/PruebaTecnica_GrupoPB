@@ -35,9 +35,10 @@ function App() {
     <>
       <Navbar />
       
+      {/* Falto mandar el dataSlider con el array de dataHero*/}
       <section className='hero-section'>
         <div className='slider-space'>
-          <Slider />
+          <Slider dataSlider={dataHero} />
         </div>
       </section>
 

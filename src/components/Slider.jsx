@@ -21,7 +21,7 @@ const Panel = ({ panelInfo, dataSlider, activeID }) => {
 const Slider = ({ dataSlider, panelInfo }) => {
   const wrapperClassName = `wrapper${panelInfo ? `-${panelInfo}` : ''}`;
 
-    // defineel background img inicial del slider
+    // define el background img inicial del slider
   const [activeID, setActiveID] = useState(0);
   const [wrapperStyle, setWrapperStyle] = useState({
     backgroundImage: `url('${dataSlider[0].img}')`,
