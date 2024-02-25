@@ -1,5 +1,5 @@
-import React from 'react'
-import './styles/Cards.css'
+import React from 'react';
+import './styles/Cards.css';
 
 const pizzasList = [
     {
@@ -25,16 +25,19 @@ const pizzasList = [
 ];
 
 const Cards = () => {
-  return (
-    <div className="cards-container">
-      {pizzasList.map(pizza => (
-        <div key={pizza.id} className="card">
-          <img src={pizza.url} alt={pizza.title} className="card-image" />
-          <h2 className="card-title">{pizza.title}</h2>
+    return (
+        <div>
+            <hr className="divider-line" /> {/* Línea de división */}
+            <div className="cards-container">
+                {pizzasList.map(pizza => (
+                    <div key={pizza.id} className="card">
+                        <img src={pizza.url} alt={pizza.title} className="card-image" />
+                        <h2 className="card-title">{pizza.title}</h2>
+                    </div>
+                ))}
+            </div>
         </div>
-      ))}
-    </div>
-  );
+    );
 }
 
 export default Cards;
