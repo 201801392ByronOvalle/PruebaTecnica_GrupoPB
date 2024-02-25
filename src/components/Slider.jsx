@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './styles/Slider.scss';
-
-
+import React, { useState, useEffect } from 'react'
+import './styles/Slider.css'
 
 const Panel = ({ panelInfo, dataSlider, activeID }) => {
 
