@@ -44,6 +44,7 @@ function App() {
       </section>
       </div>
 
+      {/* Componente Cards */}
       <section className='cards-section'> 
         <Cards />
       </section>
